@@ -93,19 +93,33 @@ URL: http://localhost:8000/api/movies/
 Purpose: Create new movie records.
 Evidence: Screenshots of successful creation with JSON payloads.
 
+![image](https://github.com/user-attachments/assets/29a02356-a08a-4fcc-ab32-bf6b2f155978)
+
+![image](https://github.com/user-attachments/assets/49ef1e39-e260-4ee0-916b-daef9cf624b8)
+
+![image](https://github.com/user-attachments/assets/d6092cc6-ea32-4806-b7d8-10f49cd93217)
+
+![image](https://github.com/user-attachments/assets/831d12a2-0b10-4043-951e-aeae69cb69c6)
+
 GET Requests:
 URL: http://localhost:8000/api/movies/
 Purpose: Retrieve the list of movies.
 Evidence: Screenshots of successful retrieval showing the list of movies.
+
+![image](https://github.com/user-attachments/assets/7790c81a-b3b7-4998-b0f0-a9fe9ccc31ef)
 
 PUT Requests:
 URL: http://localhost:8000/api/movies/<id>/
 Purpose: Update movie records.
 Evidence: Screenshots of successful updates with JSON payloads.
 
+![image](https://github.com/user-attachments/assets/e248dd61-3b91-491d-9ccb-a860545dd0f5)
+
+
 DELETE Requests:
 URL: http://localhost:8000/api/movies/<id>/
 Purpose: Delete specific movie records.
 Evidence: Screenshots showing the 204 No Content status indicating successful deletion.
+
 ![image](https://github.com/user-attachments/assets/5cc6942a-5770-4336-a462-733480ecaec3)
 
