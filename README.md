@@ -107,3 +107,5 @@ DELETE Requests:
 URL: http://localhost:8000/api/movies/<id>/
 Purpose: Delete specific movie records.
 Evidence: Screenshots showing the 204 No Content status indicating successful deletion.
+![image](https://github.com/user-attachments/assets/5cc6942a-5770-4336-a462-733480ecaec3)
+
