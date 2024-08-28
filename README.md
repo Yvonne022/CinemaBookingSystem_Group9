@@ -4,39 +4,54 @@ This project is a Django-based REST API for managing movies, cinema halls, scree
 
 ### 1. Description of the Models and Their Relationships
 Models
-
 Movie
 
 Fields:
 title (CharField): The title of the movie.
+
 description (TextField): A brief description of the movie.
+
 duration (IntegerField): The duration of the movie in minutes.
+
 release_date (DateField): The release date of the movie.
+
 Relationships: No direct relationships with other models.
 
 CinemaHall
 
 Fields:
 name (CharField): The name of the cinema hall.
+
 capacity (IntegerField): The maximum seating capacity of the cinema hall.
+
 Relationships: No direct relationships with other models.
+
 Screening
 
 Fields:
 
 movie (ForeignKey to Movie): The movie being screened.
+
 hall (ForeignKey to CinemaHall): The cinema hall where the movie is screened.
+
 start_time (DateTimeField): The start time of the screening.
+
 Relationships: Links Movie and CinemaHall through foreign keys.
+
 Booking
 
 Fields:
 
 screening (ForeignKey to Screening): The screening for which the booking is made.
+
 customer_name (CharField): The name of the customer making the booking.
+
 seats_reserved (IntegerField): The number of seats reserved.
+
 booking_time (DateTimeField): The time when the booking was made (auto-filled).
+
 Relationships: Links Screening through a foreign key.
+
 
 Relationships Summary:
 
@@ -89,9 +104,6 @@ ScreeningSerializer: Ensures that the start_time is in the future relative to th
 BookingSerializer: Ensures that seats_reserved is a positive integer and that customer_name is not empty.
 
 ### 4. Overview of the URL Patterns and Their Purpose
-URLs Configuration:
-
- List and Retrieve Endpoints:
 
 URL Patterns: http://localhost:8000/api/movies/, http://localhost:8000/api/halls/, http://localhost:8000/api/screenings/, http://localhost:8000/api/bookings/
 
