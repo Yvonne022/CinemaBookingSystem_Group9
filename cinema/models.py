@@ -23,3 +23,10 @@ class Booking(models.Model):
     customer_name = models.CharField(max_length=100)
     seats_reserved = models.IntegerField()
     booking_time = models.DateTimeField(auto_now_add=True)
+
+class Review(models.Model):  
+    movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
+    reviewer_name = models.CharField(max_length=100)
+    rating = models.IntegerField()  
+    comment = models.TextField()
+    review_date = models.DateTimeField(auto_now_add=True)
