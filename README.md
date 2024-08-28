@@ -139,7 +139,7 @@ DELETE: Remove existing records.
 
 Testing Endpoints Using Postman:
 
-POST Requests:
+### POST Requests:
 
 URL: http://localhost:8000/api/movies/
 
@@ -156,7 +156,7 @@ Evidence: Screenshots of successful creation with JSON payloads.
 ![image](https://github.com/user-attachments/assets/831d12a2-0b10-4043-951e-aeae69cb69c6)
 
 
-GET Requests:
+### GET Requests:
 
 URL: http://localhost:8000/api/movies/
 
@@ -167,7 +167,7 @@ Evidence: Screenshots of successful retrieval showing the list of movies.
 ![image](https://github.com/user-attachments/assets/7790c81a-b3b7-4998-b0f0-a9fe9ccc31ef)
 
 
-PUT Requests:
+### PUT Requests:
 
 URL: http://localhost:8000/api/movies/<id>/
 
@@ -179,7 +179,7 @@ Evidence: Screenshots of successful updates with JSON payloads.
 
 
 
-DELETE Requests:
+### DELETE Requests:
 
 URL: http://localhost:8000/api/movies/<id>/
 
