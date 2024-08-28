@@ -4,6 +4,11 @@ This project is a Django-based REST API for managing movies, cinema halls, scree
 
 ### Group Members
 145353 Yvonne Ndambiri
+120745 Andy Njogu
+151614 Cyril ochako
+150670 Daruka Aluong
+119314 Cassey Oguta
+
 
 ### 1. Description of the Models and Their Relationships
 Models
