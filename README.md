@@ -5,7 +5,7 @@ This project is a Django-based REST API for managing movies, cinema halls, scree
 ### 1. Description of the Models and Their Relationships
 Models
 
-Movie
+### Movie
 
 Fields:
 title (CharField): The title of the movie.
@@ -18,7 +18,7 @@ release_date (DateField): The release date of the movie.
 
 Relationships: No direct relationships with other models.
 
-CinemaHall
+### CinemaHall
 
 Fields:
 name (CharField): The name of the cinema hall.
@@ -27,7 +27,7 @@ capacity (IntegerField): The maximum seating capacity of the cinema hall.
 
 Relationships: No direct relationships with other models.
 
-Screening
+### Screening
 
 Fields:
 
@@ -39,7 +39,7 @@ start_time (DateTimeField): The start time of the screening.
 
 Relationships: Links Movie and CinemaHall through foreign keys.
 
-Booking
+### Booking
 
 Fields:
 
@@ -53,7 +53,7 @@ booking_time (DateTimeField): The time when the booking was made (auto-filled).
 
 Relationships: Links Screening through a foreign key.
 
-Review
+### Review
 movie: (ForeignKey to Movie): The movie to be reviewed.
 
 reviewer_name: (CharField) : The one making the review.
@@ -65,7 +65,7 @@ comment: (TextField) : User can leave comments about the movie.
 review_date: (DateTimeField) : The date and time the review was made.
 
 
-Relationships Summary:
+### Relationships Summary:
 
 Movie and Screening: One-to-Many (One movie can have multiple screenings).
 
@@ -86,7 +86,7 @@ BookingViewSet: Handles CRUD operations for the Booking model.
 
 ReviewViewSet: Handles CRUD operations for the Review model.
 
-Roles:
+### Roles:
 
 MovieViewSet: Provides methods to list, create, retrieve, update, and delete movie records.
 
@@ -97,7 +97,6 @@ ScreeningViewSet: Provides methods to list, create, retrieve, update, and delete
 BookingViewSet: Provides methods to list, create, retrieve, update, and delete booking records.
 
 ### 3. Description of the Serializers and Any Validation Rules
-Serializers:
 
 MovieSerializer: Converts Movie model instances to JSON and vice versa.
 
@@ -109,7 +108,7 @@ BookingSerializer: Converts Booking model instances to JSON and vice versa.
 
 ReviewSerializer: Converts Review model instances to JSON and vice versa. 
 
-Validation Rules:
+### Validation Rules:
 
 MovieSerializer: Ensures that duration is a positive integer.
 
@@ -135,9 +134,6 @@ PUT: Update existing records.
 
 DELETE: Remove existing records.
 
-Router Configuration:
-
-DefaultRouter: Automatically generates the URL patterns for the API endpoints based on the registered viewsets.
 
 ### 5. Summary of the Tests Conducted
 
