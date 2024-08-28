@@ -84,6 +84,8 @@ ScreeningViewSet: Manages CRUD operations for the Screening model.
 
 BookingViewSet: Handles CRUD operations for the Booking model.
 
+ReviewViewSet: Handles CRUD operations for the Review model.
+
 Roles:
 
 MovieViewSet: Provides methods to list, create, retrieve, update, and delete movie records.
