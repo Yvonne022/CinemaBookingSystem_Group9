@@ -4,6 +4,7 @@ This project is a Django-based REST API for managing movies, cinema halls, scree
 
 ### 1. Description of the Models and Their Relationships
 Models
+
 Movie
 
 Fields:
