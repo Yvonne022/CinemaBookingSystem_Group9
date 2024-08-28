@@ -47,16 +47,22 @@ Screening and Booking: One-to-Many (One screening can have multiple bookings).
 ViewSets:
 
 MovieViewSet: Handles CRUD operations for the Movie model.
-CinemaHallViewSet: Manages CRUD operations for the CinemaHall model.
-ScreeningViewSet: Manages CRUD operations for the Screening model.
-BookingViewSet: Handles CRUD operations for the Booking model.
-Roles:
 
+CinemaHallViewSet: Manages CRUD operations for the CinemaHall model.
+
+ScreeningViewSet: Manages CRUD operations for the Screening model.
+
+BookingViewSet: Handles CRUD operations for the Booking model.
+
+Roles:
 MovieViewSet: Provides methods to list, create, retrieve, update, and delete movie records.
 
 CinemaHallViewSet: Provides methods to list, create, retrieve, update, and delete cinema hall records.
+
 ScreeningViewSet: Provides methods to list, create, retrieve, update, and delete screening records.
+
 BookingViewSet: Provides methods to list, create, retrieve, update, and delete booking records.
+
 ### 3. Description of the Serializers and Any Validation Rules
 Serializers:
 
