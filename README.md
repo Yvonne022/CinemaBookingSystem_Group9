@@ -2,6 +2,9 @@
 ### Project Overview
 This project is a Django-based REST API for managing movies, cinema halls, screenings, and bookings. It includes models, serializers, views, URL patterns, and tests to facilitate CRUD operations for each entity.
 
+### Group Members
+145353 Yvonne Ndambiri
+
 ### 1. Description of the Models and Their Relationships
 Models
 
