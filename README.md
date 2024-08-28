@@ -53,6 +53,17 @@ booking_time (DateTimeField): The time when the booking was made (auto-filled).
 
 Relationships: Links Screening through a foreign key.
 
+Review
+movie: (ForeignKey to Movie): The movie to be reviewed.
+
+reviewer_name: (CharField) : The one making the review.
+
+rating: (IntegerField) : How one will rate the movie.
+
+comment: (TextField) : User can leave comments about the movie. 
+
+review_date: (DateTimeField) : The date and time the review was made.
+
 
 Relationships Summary:
 
@@ -94,6 +105,8 @@ ScreeningSerializer: Converts Screening model instances to JSON and vice versa.
 
 BookingSerializer: Converts Booking model instances to JSON and vice versa.
 
+ReviewSerializer: Converts Review model instances to JSON and vice versa. 
+
 Validation Rules:
 
 MovieSerializer: Ensures that duration is a positive integer.
@@ -106,7 +119,7 @@ BookingSerializer: Ensures that seats_reserved is a positive integer and that cu
 
 ### 4. Overview of the URL Patterns and Their Purpose
 
-URL Patterns: http://localhost:8000/api/movies/, http://localhost:8000/api/halls/, http://localhost:8000/api/screenings/, http://localhost:8000/api/bookings/
+URL Patterns: http://localhost:8000/api/movies/, http://localhost:8000/api/halls/, http://localhost:8000/api/screenings/, http://localhost:8000/api/bookings/, http://localhost:8000/api/reviews/
 
 Purpose: Allows users to list all records or retrieve a specific record by its ID.
 
