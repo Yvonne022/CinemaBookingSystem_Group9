@@ -37,12 +37,15 @@ customer_name (CharField): The name of the customer making the booking.
 seats_reserved (IntegerField): The number of seats reserved.
 booking_time (DateTimeField): The time when the booking was made (auto-filled).
 Relationships: Links Screening through a foreign key.
+
 Relationships Summary:
 
 Movie and Screening: One-to-Many (One movie can have multiple screenings).
 
 CinemaHall and Screening: One-to-Many (One cinema hall can have multiple screenings).
+
 Screening and Booking: One-to-Many (One screening can have multiple bookings).
+
 ### 2. Explanation of the Views/Viewsets and Their Roles
 ViewSets:
 
@@ -55,6 +58,7 @@ ScreeningViewSet: Manages CRUD operations for the Screening model.
 BookingViewSet: Handles CRUD operations for the Booking model.
 
 Roles:
+
 MovieViewSet: Provides methods to list, create, retrieve, update, and delete movie records.
 
 CinemaHallViewSet: Provides methods to list, create, retrieve, update, and delete cinema hall records.
@@ -67,36 +71,56 @@ BookingViewSet: Provides methods to list, create, retrieve, update, and delete b
 Serializers:
 
 MovieSerializer: Converts Movie model instances to JSON and vice versa.
+
 CinemaHallSerializer: Converts CinemaHall model instances to JSON and vice versa.
+
 ScreeningSerializer: Converts Screening model instances to JSON and vice versa.
+
 BookingSerializer: Converts Booking model instances to JSON and vice versa.
+
 Validation Rules:
 
 MovieSerializer: Ensures that duration is a positive integer.
+
 CinemaHallSerializer: No additional validation rules.
+
 ScreeningSerializer: Ensures that the start_time is in the future relative to the current time.
+
 BookingSerializer: Ensures that seats_reserved is a positive integer and that customer_name is not empty.
+
 ### 4. Overview of the URL Patterns and Their Purpose
 URLs Configuration:
+
  List and Retrieve Endpoints:
 
 URL Patterns: http://localhost:8000/api/movies/, http://localhost:8000/api/halls/, http://localhost:8000/api/screenings/, http://localhost:8000/api/bookings/
+
 Purpose: Allows users to list all records or retrieve a specific record by its ID.
+
 CRUD Operations:
 
 POST: Create new records.
+
 GET: Retrieve existing records.
+
 PUT: Update existing records.
+
 DELETE: Remove existing records.
+
 Router Configuration:
 
 DefaultRouter: Automatically generates the URL patterns for the API endpoints based on the registered viewsets.
+
 ### 5. Summary of the Tests Conducted
+
 Testing Endpoints Using Postman:
 
 POST Requests:
+
 URL: http://localhost:8000/api/movies/
+
 Purpose: Create new movie records.
+
 Evidence: Screenshots of successful creation with JSON payloads.
 
 ![image](https://github.com/user-attachments/assets/29a02356-a08a-4fcc-ab32-bf6b2f155978)
@@ -109,16 +133,22 @@ Evidence: Screenshots of successful creation with JSON payloads.
 
 
 GET Requests:
+
 URL: http://localhost:8000/api/movies/
+
 Purpose: Retrieve the list of movies.
+
 Evidence: Screenshots of successful retrieval showing the list of movies.
 
 ![image](https://github.com/user-attachments/assets/7790c81a-b3b7-4998-b0f0-a9fe9ccc31ef)
 
 
 PUT Requests:
+
 URL: http://localhost:8000/api/movies/<id>/
+
 Purpose: Update movie records.
+
 Evidence: Screenshots of successful updates with JSON payloads.
 
 ![image](https://github.com/user-attachments/assets/e248dd61-3b91-491d-9ccb-a860545dd0f5)
@@ -126,9 +156,13 @@ Evidence: Screenshots of successful updates with JSON payloads.
 
 
 DELETE Requests:
+
 URL: http://localhost:8000/api/movies/<id>/
+
 Purpose: Delete specific movie records.
+
 Evidence: Screenshots showing the 204 No Content status indicating successful deletion.
+
 
 ![image](https://github.com/user-attachments/assets/5cc6942a-5770-4336-a462-733480ecaec3)
 
