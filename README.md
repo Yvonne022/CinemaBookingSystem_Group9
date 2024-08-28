@@ -101,6 +101,7 @@ Evidence: Screenshots of successful creation with JSON payloads.
 
 ![image](https://github.com/user-attachments/assets/831d12a2-0b10-4043-951e-aeae69cb69c6)
 
+
 GET Requests:
 URL: http://localhost:8000/api/movies/
 Purpose: Retrieve the list of movies.
@@ -108,12 +109,14 @@ Evidence: Screenshots of successful retrieval showing the list of movies.
 
 ![image](https://github.com/user-attachments/assets/7790c81a-b3b7-4998-b0f0-a9fe9ccc31ef)
 
+
 PUT Requests:
 URL: http://localhost:8000/api/movies/<id>/
 Purpose: Update movie records.
 Evidence: Screenshots of successful updates with JSON payloads.
 
 ![image](https://github.com/user-attachments/assets/e248dd61-3b91-491d-9ccb-a860545dd0f5)
+
 
 
 DELETE Requests:
