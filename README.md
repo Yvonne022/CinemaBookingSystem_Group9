@@ -89,22 +89,21 @@ DefaultRouter: Automatically generates the URL patterns for the API endpoints ba
 Testing Endpoints Using Postman:
 
 POST Requests:
-
 URL: http://localhost:8000/api/movies/
 Purpose: Create new movie records.
 Evidence: Screenshots of successful creation with JSON payloads.
-GET Requests:
 
+GET Requests:
 URL: http://localhost:8000/api/movies/
 Purpose: Retrieve the list of movies.
 Evidence: Screenshots of successful retrieval showing the list of movies.
-PUT Requests:
 
+PUT Requests:
 URL: http://localhost:8000/api/movies/<id>/
 Purpose: Update movie records.
 Evidence: Screenshots of successful updates with JSON payloads.
-DELETE Requests:
 
+DELETE Requests:
 URL: http://localhost:8000/api/movies/<id>/
 Purpose: Delete specific movie records.
 Evidence: Screenshots showing the 204 No Content status indicating successful deletion.
